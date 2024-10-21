@@ -5,11 +5,8 @@ import speech_recognition as sr
 from pydub import AudioSegment
 from utils.formatted_response import send_responses, initialize_user
 
-# Укажите путь к папке с ffmpeg и ffprobe
-ffmpeg_path = r'C:\Users\oscar\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-7.1-essentials_build\bin'
-
 # Добавьте путь к ffmpeg и ffprobe в системные переменные среды
-os.environ['PATH'] = ffmpeg_path + os.pathsep + os.environ['PATH']
+os.environ['PATH'] = os.pathsep + os.environ['PATH']
 
 def register_voice_handler(bot, user_messages, user_message_ids):
     @bot.message_handler(content_types=['voice'])
