@@ -1,4 +1,4 @@
-Here is a sample README.md file for a Telegram bot that generates "rizz" replies using the Duck.ai GPT-4o-mini free API:
+Telegram bot that generates "rizz" replies using the Duck.ai GPT-4o-mini free API:
 
 # Rice Bot
 
